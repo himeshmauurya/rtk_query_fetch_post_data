@@ -8,12 +8,14 @@ import Home from './src/component/Home/Home';
 // import { pokemonApi } from './src/component/navigation/LazyApi';
 //  import LazyHome from './src/component/Home/LazyHome';
 
-
+//skip
+import SkipHome from './src/component/Home/SkipHome';
 const App = () => {
   return (
     <ApiProvider api={pokemonApi}>
         {/* <LazyHome/> */}
-        <Home/> 
+        {/* <Home/>  */}
+        <SkipHome/>
     </ApiProvider>
   )
 }
