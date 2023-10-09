@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/Assets/fonts/AlexBrush-Regular.otf",
+      "sha1": "3eb772360d991696915a51eda806bab2ec00e68e"
+    },
+    {
+      "path": "src/Assets/fonts/CedarvilleCursive-Regular.ttf",
+      "sha1": "7ef9e90cc18213b8779a16bc3fb84f1a6e610331"
+    }
+  ]
+}

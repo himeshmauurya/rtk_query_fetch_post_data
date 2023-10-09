@@ -6,17 +6,21 @@ import Home from './src/component/Home/Home';
 
 //Lazy
 // import { pokemonApi } from './src/component/navigation/LazyApi';
-//  import LazyHome from './src/component/Home/LazyHome';
+// import LazyHome from './src/component/Home/LazyHome';
 
 //skip
-import SkipHome from './src/component/Home/SkipHome';
+// import SkipHome from './src/component/Home/SkipHome';
 const App = () => {
+  console.log("object")
   return (
-    <ApiProvider api={pokemonApi}>
-        {/* <LazyHome/> */}
-        {/* <Home/>  */}
-        <SkipHome/>
-    </ApiProvider>
+    <>
+    
+     <ApiProvider api={pokemonApi}>
+      {/* <LazyHome/> */}
+        <Home/> 
+        {/* <SkipHome/> */}
+  </ApiProvider>
+    </>
   )
 }
 
