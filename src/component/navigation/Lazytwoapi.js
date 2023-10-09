@@ -3,11 +3,14 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const pokemonApi = createApi({
   reducerPath: 'pokemonApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://fakestoreapi.com' }),
+  baseQuery: fetchBaseQuery({ baseUrl: '/' }),
   endpoints: (builder) => ({
     getPokemonByName: builder.query({
-      query: () => `/products`,
+      query: () => `https://fakestoreapi.com/products?limit=3`,
     }),
+    getProductByName: builder.query({
+        query: () => `https://dummyjson.com/products?limit=3`,
+      }),
     createUser: builder.mutation({
       query: (body) => ({
         url: '/products',
@@ -19,4 +22,4 @@ export const pokemonApi = createApi({
 })
 
 
-export const { useLazyGetPokemonByNameQuery,useCreateUserMutation } = pokemonApi
+export const { useLazyGetProductByNameQuery,useLazyGetPokemonByNameQuery,useCreateUserMutation } = pokemonApi
